@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fizza Syed | Marketing Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f8f3f0;
+      color: #2d2525;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #d8cbc6;
+      background: #f8f3f0;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2d2525;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    nav a:hover {
+      color: #9c6f70;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 10%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 12px;
+      color: #9c6f70;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(55px, 9vw, 105px);
+      font-weight: normal;
+      line-height: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      font-style: italic;
+      color: #5c4d4d;
+    }
+
+    section {
+      padding: 90px 10%;
+    }
+
+    .section-number {
+      color: #9c6f70;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 45px;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    .statement {
+      background: #efe4e0;
+    }
+
+    .statement p {
+      max-width: 900px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 29px;
+      line-height: 1.5;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      max-width: 900px;
+    }
+
+    .skill {
+      padding: 20px 0;
+      border-bottom: 1px solid #cdbfba;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .skill:nth-child(odd) {
+      margin-right: 40px;
+    }
+
+    .projects {
+      background: #2d2525;
+      color: #f8f3f0;
+    }
+
+    .projects .section-number {
+      color: #d4a7a7;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .project-card {
+      border-top: 1px solid #8e7d79;
+      padding-top: 25px;
+    }
+
+    .project-label {
+      color: #d4a7a7;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      font-weight: normal;
+      margin-bottom: 18px;
+    }
+
+    .project-card p {
+      color: #d8ceca;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 55px 10%;
+      text-align: center;
+      background: #f8f3f0;
+      border-top: 1px solid #d8cbc6;
+    }
+
+    footer p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-style: italic;
+      color: #776565;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        gap: 15px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skill:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      .hero {
+        min-height: 65vh;
+      }
+
+      .statement p {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">FIZZA SYED</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Marketing • Brand Strategy • Creative</div>
+
+      <h1>Fizza<br>Syed</h1>
+
+      <p>
+        Exploring the intersection of marketing, fashion, beauty,
+        culture, and meaningful brand storytelling.
+      </p>
+    </div>
+  </header>
+
+  <section class="statement" id="about">
+    <div class="section-number">01 — PERSONAL STATEMENT</div>
+
+    <h2>About Me</h2>
+
+    <p>
+      I am a marketing student interested in international fashion and
+      beauty marketing, brand strategy, and creating meaningful
+      connections between brands and consumers.
+    </p>
+  </section>
+
+  <section id="skills">
+    <div class="section-number">02 — EXPERTISE</div>
+
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill">Marketing Strategy</div>
+      <div class="skill">Brand Strategy</div>
+      <div class="skill">Social Media Marketing</div>
+      <div class="skill">Consumer Research</div>
+      <div class="skill">Digital Marketing</div>
+      <div class="skill">Creative Strategy</div>
+      <div class="skill">Canva</div>
+      <div class="skill">Video Editing</div>
+      <div class="skill">Team Collaboration</div>
+      <div class="skill">Communication</div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-number">03 — SELECTED WORK</div>
+
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-label">Integrated Marketing</div>
+
+        <h3>Forage Marketing Job Simulation</h3>
+
+        <p>
+          Developed an integrated marketing campaign for a smart fitness
+          product, explored digital retail innovation, created a
+          hyperlocal ambassador strategy, and analyzed campaign
+          performance using conversion rate, CAC, and ROI.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-label">Advertising Strategy</div>
+
+        <h3>Rare Beauty Brand Analysis</h3>
+
+        <p>
+          Conducted external and consumer analysis of Rare Beauty,
+          examining competitive pressures, customer conversations,
+          product perceptions, and opportunities for brand
+          differentiation.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-label">International Marketing</div>
+
+        <h3>Apple Global Marketing Analysis</h3>
+
+        <p>
+          Researched Apple as a global company and examined its
+          international presence, business environment, and marketing
+          considerations as part of an international marketing project.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Marketing • Creativity • Global Perspective</p>
+  </footer>
+
+</body>
+</html>
